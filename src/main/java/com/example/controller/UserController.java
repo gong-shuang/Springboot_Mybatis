@@ -21,6 +21,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    //get请求
     @RequestMapping("getUser/{id}")
     public String GetUser(@PathVariable int id){
         return userService.Sel(id).toString();
